@@ -18,5 +18,3 @@ export const deleteTodo = (todoId: number) => {
 export const updateTodo = ({ title, completed, userId, id }: Todo) => {
   return client.post<Todo[]>(`/todos/${id}`, { title, completed, userId, id });
 };
-
-// Add more methods here
